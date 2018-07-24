@@ -1,21 +1,10 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-  },
-  extends: 'eslint:recommended',
-  parserOptions: {
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-      jsx: true,
-    },
-    sourceType: 'module',
-  },
-  plugins: ['react'],
+  extends: 'airbnb',
+  plugins: ['react', 'jsx-a11y', 'import'],
   rules: {
-    indent: ['error', 2],
-    'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    semi: ['error', 'always'],
+    "react/jsx-filename-extension": 0
+  }
+  globals: {
+    document: 1,
   },
 };
