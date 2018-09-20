@@ -24,9 +24,6 @@ class Register extends Component {
       variables: { username, email, password },
     });
     const { ok, errors } = response.data.register;
-    console.log('====================================');
-    console.log(response);
-    console.log('====================================');
     if (ok) {
       this.props.history.push('/');
     } else {
